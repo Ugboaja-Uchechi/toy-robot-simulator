@@ -1,9 +1,9 @@
 import { Direction, Position, RobotState } from "./interface";
 
 class Robot {
-  private state: RobotState = { position: null, direction: null };
+  public state: RobotState = { position: null, direction: null };
   // represents the table size
-  private readonly tableSize = 5;
+  public readonly tableSize = 5;
 
   // Check if the position is within table boundaries
   private isValidPosition(position: Position): boolean {
